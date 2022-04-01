@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    >
+
+    <TextView
+        android:id="@+id/log"
+        android:layout_width="315dp"
+        android:layout_height="200dp"
+        android:text="@string/title_logs"
+        android:maxLines="15"
+        android:scrollbars = "vertical"
+        android:gravity="bottom"
+        android:layout_marginTop="37dp"
+        android:layout_alignStart="@+id/t1" />
+
+    <EditText
+        android:id="@+id/t1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/title_message"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="49dp"
+        android:layout_below="@+id/log" />
+
+    <Button
+        android:id="@+id/b1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title_send"
+        android:layout_alignBottom="@+id/t1"
+        android:layout_alignEnd="@+id/log" />
+
+
+
+</RelativeLayout>
